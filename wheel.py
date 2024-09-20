@@ -1,3 +1,4 @@
+import sys
 import pygame
 from pygame.locals import *
 from OpenGL.GL import *
@@ -57,3 +58,5 @@ while running:
     pygame.time.wait(10)
 
 pygame.quit()
+
+sys.modules['draw_wheel'] = draw_wheel
